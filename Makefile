@@ -9,7 +9,7 @@ test:
 		$(MOCHA_OPTS)
 
 test-cov: lib-cov
-	@pome_PROTOCOL_COV=1 $(MAKE) test REPORTER=html-cov > coverage.html
+	@POME_PROTOCOL_COV=1 $(MAKE) test REPORTER=html-cov > coverage.html
 
 lib-cov:
 	@jscoverage lib lib-cov
